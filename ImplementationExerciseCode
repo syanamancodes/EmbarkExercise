@@ -1,0 +1,370 @@
+[
+	{
+		"templateOptions": {
+			"label": "PERSONAL INFORMATION"
+		},
+		"hideExpression": "",
+		"wrapper": "panel",
+		"fieldGroup": [
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Do you meet our minimum requirement of five years of full-time, professional work experience?",
+					"required": true
+				},
+				"key": "req",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('yesno')"
+				},
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Intended Year of entry"
+				},
+				"key": "YoE",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('YearOfEntry')"
+				},
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Salutation",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Salutation1')"
+				},
+				"key": "sal",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Legal First Name",
+					"required": true
+				},
+				"key": "Fname",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Legal Last Name",
+					"required": true
+				},
+				"key": "Lname",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Pronouns"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Pronouns')"
+				},
+				"key": "pro",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Preferred Name"
+				},
+				"key": "PrefName",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Email",
+					"directions": "",
+					"required": true,
+					"learnMoreText": "\n              "
+				},
+				"key": "email",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "embarkInput",
+				"templateOptions": {
+					"label": "Date of Birth",
+					"dateFormat": "MM-DD-YYYY",
+					"required": true,
+					"convert": "date"
+				},
+				"key": "DoB",
+				"hideExpression": "model.Lname == \"University\"",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country of Citizenship",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"key": "CoC"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Other Citizenships held, if applicable"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"key": "otherCoC",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country of Birth"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"key": "CoB"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country of Residence"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"key": "CoR"
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><strong style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Preferred Mailing Address</strong><br><small style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:12.88px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">(Where all admission documents will be sent)</small></p>",
+				"className": "section-label"
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Street Address",
+					"required": true
+				},
+				"key": "sAdd"
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Street Address Cont․"
+				},
+				"key": "sAddC"
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "City",
+					"required": true
+				},
+				"key": "city"
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "State/Province"
+				},
+				"key": "state"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"key": "country"
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Postal Code"
+				},
+				"key": "Pcode",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country code"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('CountryCodes')"
+				},
+				"key": "Ccode",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "embarkInput",
+				"templateOptions": {
+					"label": "Mobile Phone Number",
+					"required": true,
+					"convert": "decimal"
+				},
+				"key": "mPno",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country code"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('CountryCodes')"
+				},
+				"key": "Ccode"
+			},
+			{
+				"type": "embarkInput",
+				"templateOptions": {
+					"label": "Home Phone Number",
+					"convert": "decimal"
+				},
+				"key": "HPno",
+				"showAdvancedProperties": false
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><b style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Program Information</strong></b></p>",
+				"className": "section-label"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "How did you hear about the program?",
+					"required": true
+				},
+				"key": "hear",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('howprogram')"
+				}
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "(if applicable, Please Specify)"
+				},
+				"key": "specify"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you spoken to a MS in Risk Management program alumni/student?"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"key": "spoken",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "(If so, please sate his/her name )"
+				},
+				"key": "name",
+				"hideExpression": "model.spoken == \"No\""
+			},
+			{
+				"templateOptions": {
+					"label": "Please list any other graduate schools to which you are applying, including other programs at NYU Stern or New York University․ Write \"none\" if appropriate․",
+					"required": true
+				},
+				"key": "listOther",
+				"type": "horizontalTextarea"
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><b style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Background Information</strong></b></p>",
+				"className": "section-label"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you ever been convicted of a crime involving violence or financial impropriety?",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"key": "crime",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalTextarea",
+				"templateOptions": {
+					"label": "Please Explain",
+					"required": true
+				},
+				"key": "exp1",
+				"hideExpression": "model.crime == \"No\"",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you ever had a professional license suspended or revoked or have you ever been sanctioned by a professional organization?",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"key": "licSuspend",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalTextarea",
+				"templateOptions": {
+					"label": "Please Explain",
+					"required": true
+				},
+				"key": "exp2",
+				"hideExpression": "model.licSuspend == \"No\""
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you ever been subject to academic discipline, placed on probation, suspended, or required to withdraw from any college or university?",
+					"required": true
+				},
+				"key": "suspend",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalTextarea",
+				"templateOptions": {
+					"label": "Please Explain.",
+					"required": true
+				},
+				"key": "exp3",
+				"hideExpression": "model.suspend == \"No\""
+			}
+		]
+	}
+]
