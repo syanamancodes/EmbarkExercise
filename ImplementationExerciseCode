@@ -110,7 +110,25 @@
 				"expressionProperties": {
 					"templateOptions․options": "model․getList('countries')"
 				},
-				"key": "CoC"
+				"key": "CoC",
+				"showAdvancedProperties": false
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><strong style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">U.S. Social Security Number:</strong></p><p style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;margin:0px 0px 1em;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Please provide us with your Social Security Number if you expect to borrow U.S. federal loans or if you require 1098T tax statements at the end of the year.</p><p style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;margin:0px 0px 1em;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><i style=\"background-color:transparent;box-sizing:border-box;\">We are committed to protecting your privacy. Our databases are set up to ensure the protection of your personal information, and we employ all industry-standard safeguards.</i></p>",
+				"className": "section-label",
+				"hideExpression": "model.CoC != \"United States\""
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "U.S. Social Security Number (omit dashes):"
+				},
+				"key": "SSno",
+				"hideExpression": "model.CoC != \"United States\""
 			},
 			{
 				"type": "horizontalSelect",
@@ -149,7 +167,41 @@
 				},
 				"previewTemplate": "",
 				"template": "<p><strong style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Preferred Mailing Address</strong><br><small style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:12.88px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">(Where all admission documents will be sent)</small></p>",
-				"className": "section-label"
+				"className": "section-label",
+				"showAdvancedProperties": false
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><strong style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Ethnic Background:</strong><br><span style=\"background-color:rgb(246,247,248);color:rgb(0,0,0);\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Federal and state laws require New York University to report on gender, racial, and ethnic composition of enrollment. To assist us in meeting this requirement, please indicate your background.</span></span><br><br><span style=\"background-color:rgb(246,247,248);color:rgb(0,0,0);\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Your responses to these questions are entirely voluntary.</span></span><br><br><i style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Race and ethnicity data collected in this question is not provided to admissions committee members for use in the application-selection process. This data is collected for alternative purposes including but not limited to government and accreditation reporting requirements.</i></p>",
+				"className": "section-label",
+				"hideExpression": "model.CoC != \"United States\"",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Do you consider yourself Hispanic or Latino (optional)?"
+				},
+				"key": "consider",
+				"hideExpression": "model.CoC != \"United States\"",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('yesno')"
+				},
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Please select any other group that applies to you (optional)"
+				},
+				"key": "othergrp",
+				"hideExpression": "model.CoC != \"United States\"",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Ethnicities4')"
+				}
 			},
 			{
 				"type": "horizontalInput",
